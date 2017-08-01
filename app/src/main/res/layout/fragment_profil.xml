@@ -1,0 +1,537 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:toggle="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.zak.testfragments.ProfilFragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_header_height"
+        android:background="#ddd"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:id="@+id/header_profile"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!--<com.facebook.login.widget.ProfilePictureView
+                android:id="@+id/profile_picture"
+                android:layout_width="160dp"
+                android:layout_height="160dp"></com.facebook.login.widget.ProfilePictureView>-->
+
+            <com.facebook.login.widget.ProfilePictureView
+                android:id="@+id/profilPhoto"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/android"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/subtracted_circle"
+                android:contentDescription="@null"
+
+                android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/profil_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:text=""
+            android:textSize="25dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:toggle="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        tools:context="com.example.zak.testfragments.ProfilFragment"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:toggle="http://schemas.android.com/apk/res-auto"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="1"
+            >
+            <ImageView
+                android:id="@+id/fb"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/facebook"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:weightSum="1"
+                android:layout_gravity="center"
+                >
+            <TextView
+                android:text="Facebook"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:layout_gravity="left"
+                android:layout_marginLeft="5dp"
+                android:textStyle="normal|bold"
+                android:textSize="18sp" />
+
+                <TextView
+                    android:text=""
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editFacebookProfilView"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/modif_facebook"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/edit"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"/>
+
+            <com.zcw.togglebutton.ToggleButton
+                android:id="@+id/toggle_facebook"
+                android:layout_width="54dp"
+                toggle:tbOnColor="#0073ff"
+                toggle:tbOffColor="#ddd"
+                toggle:tbSpotColor="#fff"
+                toggle:tbOffBorderColor="#ddd"
+                toggle:tbBorderWidth="0.5dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp">
+            </com.zcw.togglebutton.ToggleButton>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="1">
+
+
+            <ImageView
+                android:id="@+id/twitter"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/twitter"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:weightSum="1"
+                android:layout_gravity="center"
+                >
+                <TextView
+                    android:text="Twitter"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textTwitterView"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="normal|bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:text=""
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTwitterProfilView"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/modif_twitter"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/edit"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"/>
+
+            <com.zcw.togglebutton.ToggleButton
+                android:id="@+id/toggle_twitter"
+                android:layout_width="54dp"
+                toggle:tbOnColor="#0073ff"
+                toggle:tbOffColor="#ddd"
+                toggle:tbSpotColor="#fff"
+                toggle:tbOffBorderColor="#ddd"
+                toggle:tbBorderWidth="0.5dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp">
+            </com.zcw.togglebutton.ToggleButton>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:toggle="http://schemas.android.com/apk/res-auto"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="1"
+            >
+
+            <ImageView
+                android:id="@+id/instagram"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/instagram"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:weightSum="1"
+                android:layout_gravity="center"
+                >
+                <TextView
+                    android:text="Instagram"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textInstagramView"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="normal|bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:text=""
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editInstagramProfilView"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/modif_instagram"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/edit"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"/>
+
+            <com.zcw.togglebutton.ToggleButton
+                android:id="@+id/toggle_instagram"
+                android:layout_width="54dp"
+                toggle:tbOnColor="#0073ff"
+                toggle:tbOffColor="#ddd"
+                toggle:tbSpotColor="#fff"
+                toggle:tbOffBorderColor="#ddd"
+                toggle:tbBorderWidth="0.5dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp">
+            </com.zcw.togglebutton.ToggleButton>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="1">
+
+
+            <ImageView
+                android:id="@+id/scapchat"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/snapchat"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:weightSum="1"
+                android:layout_gravity="center"
+                >
+                <TextView
+                    android:text="Snapchat"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textSnapchatView"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="normal|bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:text=""
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editSnapchatProfilView"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/modif_snapchat"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/edit"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"/>
+
+            <com.zcw.togglebutton.ToggleButton
+                android:id="@+id/toggle_snapchat"
+                android:layout_width="54dp"
+                toggle:tbOnColor="#0073ff"
+                toggle:tbOffColor="#ddd"
+                toggle:tbSpotColor="#fff"
+                toggle:tbOffBorderColor="#ddd"
+                toggle:tbBorderWidth="0.5dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp">
+            </com.zcw.togglebutton.ToggleButton>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="1">
+
+
+            <ImageView
+                android:id="@+id/linkedin"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/linkedin"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:weightSum="1"
+                android:layout_gravity="center"
+                >
+                <TextView
+                    android:text="LinkedIn"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textLinkedinView"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="normal|bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:text=""
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editLinkedinProfilView"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/modif_linkedin"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/edit"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"/>
+
+            <com.zcw.togglebutton.ToggleButton
+                android:id="@+id/toggle_linkedin"
+                android:layout_width="54dp"
+                toggle:tbOnColor="#0073ff"
+                toggle:tbOffColor="#ddd"
+                toggle:tbSpotColor="#fff"
+                toggle:tbOffBorderColor="#ddd"
+                toggle:tbBorderWidth="0.5dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp">
+            </com.zcw.togglebutton.ToggleButton>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="1">
+
+
+            <ImageView
+                android:id="@+id/google"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/google"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:weightSum="1"
+                android:layout_gravity="center"
+                >
+                <TextView
+                    android:text="Google+"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textGoogleView"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="normal|bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:text=""
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editGoogleProfilView"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/modif_google"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/edit"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"/>
+
+            <com.zcw.togglebutton.ToggleButton
+                android:id="@+id/toggle_google"
+                android:layout_width="54dp"
+                toggle:tbOnColor="#0073ff"
+                toggle:tbOffColor="#ddd"
+                toggle:tbSpotColor="#fff"
+                toggle:tbOffBorderColor="#ddd"
+                toggle:tbBorderWidth="0.5dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp">
+            </com.zcw.togglebutton.ToggleButton>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

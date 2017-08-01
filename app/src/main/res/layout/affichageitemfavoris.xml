@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <!--
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_vertical"
+        android:padding="10px" />
+        -->
+
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--<com.facebook.login.widget.ProfilePictureView
+            android:id="@+id/profile_picture"
+            android:layout_width="160dp"
+            android:layout_height="160dp"></com.facebook.login.widget.ProfilePictureView>-->
+
+        <com.facebook.login.widget.ProfilePictureView
+            android:id="@+id/favorisPhoto"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/android"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/subtracted_circle_list_favoris"
+            android:contentDescription="@null"
+
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="10px"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_width="wrap_content">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="10px"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_width="fill_parent"
+        >
+
+        <TextView android:id="@+id/idChange"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+
+            android:layout_weight="0.58"
+            android:textSize="20sp" />
+
+
+
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10px"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_weight="0.45">
+
+            <ImageView
+                android:id="@+id/img0"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:padding="5px" />
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:padding="5px" />
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:padding="5px" />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+
+    <ImageView
+        android:id="@+id/favorisStar"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/favoris"/>
+
+
+</LinearLayout>

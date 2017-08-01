@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item
+            android:id="@+id/nav_p1"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Ping" />
+        <!--
+        <item
+            android:id="@+id/nav_f1"
+            android:icon="@drawable/nonfavoris"
+            android:title="Favoris" />
+            -->
+        <item
+            android:id="@+id/nav_test"
+            android:icon="@drawable/nonfavoris"
+            android:title="Favoris" />
+
+
+
+        <group android:id="@+id/nav_footer">
+            <item
+                android:id="@+id/nav_deco"
+                android:icon="@drawable/outdoor"
+                android:title="Deconnexion" />
+        </group>
+
+
+</menu>

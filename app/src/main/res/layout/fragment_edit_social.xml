@@ -1,0 +1,42 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:toggle="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
+        tools:context="com.example.zak.testfragments.EditSocialFragment">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/editSocialNetworkText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"/>
+
+    <Button
+        android:text="Valider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonValider"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:indeterminate="true"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="50dp"
+            android:id="@+id/socialNetworkImage"
+
+
+            />
+
+</RelativeLayout>
